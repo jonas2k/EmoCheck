@@ -52,7 +52,8 @@ void PrintBanner() {
     std::cout << LINE_DELIMITER
               << banner
               << LINE_DELIMITER << "\n"
-              << "Emotet detection tool by JPCERT/CC.\n\n"
+              << "Emotet detection tool by JPCERT/CC.\n"
+              << "Recompiled and adapted UKS edition.\n\n"
               << "Version      : " << EMOCHECK_VERSION << "\n"
               << "Release Date : " << EMOCHECK_RELEASE_DATE << "\n"
               << "URL          : " << EMOCHECK_URL << "\n"
@@ -182,7 +183,7 @@ void WriteReport(std::vector<EmotetProcess> emotet_processes, bool is_quiet, std
         }
     } else {
         // English Report
-        outputfile << "[EmoCheck v" << EMOCHECK_VERSION << "]" << std::endl;
+        outputfile << "[EmoCheck v" << EMOCHECK_VERSION << " UKS edition]" << std::endl;
         outputfile << "Scan time: " << time_iso8601 << std::endl;
         outputfile << LINE_DELIMITER << std::endl;
         if (emotet_processes.size() > 0) {

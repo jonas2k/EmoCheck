@@ -32,4 +32,4 @@ std::tuple<int,std::vector<EmotetProcess>> ScanEmotet(bool);
 
 }  //namespace emocheck
 
-#endif  //EMOCHECK_EMOCHECK_H_
+#endif  //EMOCHECK_EMOCHECK_H;_
